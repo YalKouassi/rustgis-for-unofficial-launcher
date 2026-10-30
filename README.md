@@ -45,7 +45,7 @@ Not mirrored: the Python wheels, the `.msix` and `-setup.exe` installers (the la
 
 ## How it runs
 
-[`.github/workflows/bridge.yml`](.github/workflows/bridge.yml) runs every 30 minutes. It uses
+[`.github/workflows/bridge.yml`](.github/workflows/bridge.yml) runs every 3 hours. It uses
 [craft-bridge](https://github.com/YalKouassi/craft-bridge) with [`bridge.toml`](bridge.toml) to
 check upstream's latest release and mirror it if this repo doesn't have it yet. If upstream starts
 publishing its own `craft-app.json`, the bridge stops publishing, and the launcher should point at
